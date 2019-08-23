@@ -11,7 +11,8 @@
 		a:link, a:active, { color:none; }
 		a:visited { color:blue; }
 		body { background: rgb(0,20,30); }
-
+		body { overflow: hidden; }
+		
 		#mainCo { transition: 0.8s;
 			width:100%; height: 1080px; overflow: hidden;
 			position: absolute; top:0; left:0;
@@ -116,18 +117,17 @@
 
 		.track { list-style: none; height:2em; color: rgb(200,240,255); }
 
-		.nowOpen { color: blue;  }
+		.nowOpen { color: blue; }
 
 		.gifImage { width:450px; }
 
 		.typeBack {
-
 			background: black; opacity: 0.8;
 			position: relative;
 			top: 50px; left:50px;
 		 	width: calc( 100% - 100px ); height: 980px;}
-		.typingSpace {
 
+		.typingSpace {
 			overflow: auto;
 			font-size: 2em;
 			font-weight: bold;
