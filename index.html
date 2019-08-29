@@ -14,12 +14,12 @@
 		body { overflow: hidden; }
 		
 		#mainCo { transition: 0.8s;
-			width:100%; height: 1080px; overflow: hidden;
+			width:100vw; height: 100vh; overflow: hidden;
 			position: absolute; top:0; left:0;
 		}
 
 		#mainCover { width:100%; position: absolute; top:0; left:0; opacity:1;}
-		#coverCover { width:100%; position: fixed; top:0; left:0; transition: 0.8s;}
+		#coverCover { width:100%; top:0; left:0; transition: 0.8s;}
 
 		#backGro { opacity:0; transition: 1s; transition-delay:4s;
 			position: absolute; top:0; left:0; width:100%; height: 1080px; overflow: hidden;  }
@@ -38,7 +38,7 @@
 
 		#album {
 			opacity:0; 
-			background: rgb(0,20,30); height: 300px; width: calc(50% - 1px); overflow: hidden; color:white;
+			background: rgb(0,20,30); height: 36vh; width: calc(50% - 1px); overflow: hidden; color:white;
 			position:relative; left: 0px; transition: 1s; transition-delay:1.5s;}
 
 		#coVer { width:250px; margin-top:25px; margin-left:25px; }
@@ -50,7 +50,7 @@
 		#setList {
 			opacity:0; 
 			background-image: linear-gradient(rgb(0,45,60), rgb(0,20,30) 5%, rgb(0,20,30) 100%);
-			width: calc(50% - 1px); height:780px; position: relative; left:0px;
+			width: calc(50% - 1px); height: 65vh; position: relative; left:0px;
 			transition: 1s; transition-delay:2s;
 		}
 
@@ -71,7 +71,7 @@
 			cursor: default;
 			display:block;
 			color: white;
-			position: absolute; top: 312px; right: 30px;
+			position: absolute; bottom: 10vh; right: 30px;
 		}
 		#comeOn h1:hover{ background: blue; }
 
@@ -98,7 +98,7 @@
 			}
 
 		#header {
-			background: rgb(255,80,180); color: white; text-align:center; font-size:2em; font-weight: bold;
+			background: rgb(255,80,180); color: white; text-align:center; font-size:2vw; font-weight: bold;
 			width:100%; height:60px; line-height:60px;
 			position: absolute; top:-60px; left:0;
 			transition: 1s; transition-delay: 20s;
@@ -110,10 +110,10 @@
 
 		.fLeft { float:left; }
 
-		.para{ font-size: 1em; line-height:1.8em; font-family: 'Roboto', sans-serif; }
-		.para2{ font-size: 1em; line-height:1.8em; font-family: 'Squada One', cursive; }
-		.para3{ font-size: 0.8em; line-height:10px; font-family: 'Roboto', sans-serif; }
-		.para4{ font-size: 1em; line-height:1.8em; }
+		.para{ font-size: 1vw; line-height:1.8em; font-family: 'Roboto', sans-serif; }
+		.para2{ font-size: 1vw; line-height:1.8em; font-family: 'Squada One', cursive; }
+		.para3{ font-size: 0.8vw; line-height:10px; font-family: 'Roboto', sans-serif; }
+		.para4{ font-size: 1vw; line-height:1.8em; }
 
 		.track { list-style: none; height:2em; color: rgb(200,240,255); }
 
@@ -234,9 +234,7 @@
 	
 
 	<div id="mainCo">
-		<img id="mainCover" src="bigCover.jpg">
 		<img id="coverCover" src="bigCovercover.png">
-		
 	</div>
 
 	<footer id="footer" class="para3">
@@ -495,8 +493,8 @@
 				nocenterLine.style.opacity = 1;
 				nocenterLine.style.right = -1 + "px";
 				
-				mainCo.style.left = -100 + "%";
-				coverCover.style.left = -100 + "%";
+				mainCo.style.top = -100 + "vh";
+				coverCover.style.top = -100 + "vh";
 			}
 
 			
